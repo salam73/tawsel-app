@@ -1,0 +1,2822 @@
+{
+    "version": "0.3",
+    "exchangeRates": {
+        "usd_iqd": {
+            "sell": 1460.0,
+            "buy": 1420.0
+        },
+        "usd_sar": {
+            "sell": 3.75,
+            "buy": 3.6
+        },
+        "usd_gbp": {
+            "sell": 0.73,
+            "buy": 0.7
+        },
+        "gbp_iqd": {
+            "sell": 1996.0,
+            "buy": 1990.0
+        }
+    },
+    "commission": 0.01,
+    "companies": {
+        "pubg": {
+            "arabicName": "ببجي",
+            "englishName": "PUBG",
+            "apiName": "pubg",
+            "cardTypes": {
+                "pubg_60_UC": {
+                    "quantityName": "60UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_60_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": -1141.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 0.97,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "pubg_190_UC": {
+                    "quantityName": "190UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_190_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": -3350.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 2.92,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "pubg_325_UC": {
+                    "quantityName": "325UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_325_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 5600.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 4.71,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "pubg_660_UC": {
+                    "quantityName": "660UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_660_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 11600.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 9.55,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "pubg_1800_UC": {
+                    "quantityName": "1800UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_1800_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 29000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 23.98,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "pubg_3850_UC": {
+                    "quantityName": "3850UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_3850_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 60000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 47.96,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "pubg_8100_UC": {
+                    "quantityName": "8100UC",
+                    "groupInLanguage": {
+                        "arabic": "ببجي",
+                        "english": "PUBG"
+                    },
+                    "code": "pubg_8100_UC",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 117000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 96.34,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "google_play": {
+            "arabicName": "جوجل بلي",
+            "englishName": "Google Play",
+            "apiName": "google_play",
+            "cardTypes": {
+                "google_play_5_usd": {
+                    "quantityName": "5$",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_5_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6600.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 5.28,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12950.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.56,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_15_usd": {
+                    "quantityName": "15$",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_15_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 19500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 15.85,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 32395.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 26.01,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 62000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 51.2,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 129500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 101.62,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_10_pound": {
+                    "quantityName": "10 بريطاني",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_10_pound",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 17000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 13.82,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_25_pound": {
+                    "quantityName": "25بريطاني",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_25_pound",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 42750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 34.75,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "google_play_50_pound": {
+                    "quantityName": "50 بريطاني",
+                    "groupInLanguage": {
+                        "arabic": "جوجل بلي",
+                        "english": "Google Play"
+                    },
+                    "code": "google_play_50_pound",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 84500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 68.69,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "free_fire": {
+            "arabicName": "فري فاير",
+            "englishName": "Free Fire",
+            "apiName": "free_fire",
+            "cardTypes": {
+                "free_fire_110_dimond": {
+                    "quantityName": "110جوهرة",
+                    "groupInLanguage": {
+                        "arabic": "فري فاير",
+                        "english": "Free Fire"
+                    },
+                    "code": "free_fire_110_dimond",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 1400.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 1.13,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "free_fire_266_dimond": {
+                    "quantityName": "266جوهرة",
+                    "groupInLanguage": {
+                        "arabic": "فري فاير",
+                        "english": "Free Fire"
+                    },
+                    "code": "free_fire_266_dimond",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 2750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 2.23,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "free_fire_1166_dimond": {
+                    "quantityName": "1166جوهرة",
+                    "groupInLanguage": {
+                        "arabic": "فري فاير",
+                        "english": "Free Fire"
+                    },
+                    "code": "free_fire_1166_dimond",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 13000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.56,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "free_fire_2399_dimond": {
+                    "quantityName": "2399جوهرة",
+                    "groupInLanguage": {
+                        "arabic": "فري فاير",
+                        "english": "Free Fire"
+                    },
+                    "code": "free_fire_2399_dimond",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 25500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 20.73,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "itunes": {
+            "arabicName": "بطاقة ايتونز",
+            "englishName": "iTunes",
+            "apiName": "itunes",
+            "cardTypes": {
+                "itunes_2_usd": {
+                    "quantityName": "2$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_2_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 2460.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 2.11,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_3_usd": {
+                    "quantityName": "3$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_3_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 3930.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 3.08,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_4_usd": {
+                    "quantityName": "4$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_4_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 5100.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 4.14,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_5_usd": {
+                    "quantityName": "5$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_5_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6400.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 5.2,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.16,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_15_usd": {
+                    "quantityName": "15$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_15_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 19000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 15.44,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_20_usd": {
+                    "quantityName": "20$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_20_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 25500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 20.73,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_30_usd": {
+                    "quantityName": "30$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_30_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 37500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 30.48,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 63000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 51.21,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 124500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 101.21,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_200_usd": {
+                    "quantityName": "200$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_200_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 248000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 201.62,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_300_usd": {
+                    "quantityName": "300$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_300_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 373000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 303.25,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "itunes_400_usd": {
+                    "quantityName": "400$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقة ايتونز",
+                        "english": "iTunes"
+                    },
+                    "code": "itunes_400_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 490000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 398.37,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "razer_gold": {
+            "arabicName": "ريزر جولد",
+            "englishName": "Razer Gold",
+            "apiName": "razer_gold",
+            "cardTypes": {
+                "razer_gold_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "ريزر جولد حساب عالمي",
+                        "english": "Razer Gold"
+                    },
+                    "code": "razer_gold_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12600.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.24,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "razer_gold_20_usd": {
+                    "quantityName": "20$",
+                    "groupInLanguage": {
+                        "arabic": "ريزر جولد حساب عالمي",
+                        "english": "Razer Gold"
+                    },
+                    "code": "razer_gold_20_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 25000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 20.32,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "razer_gold_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "ريزر جولد حساب عالمي",
+                        "english": "Razer Gold"
+                    },
+                    "code": "razer_gold_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 62700.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.97,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "razer_gold_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "ريزر جولد حساب عالمي",
+                        "english": "Razer Gold"
+                    },
+                    "code": "razer_gold_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 125000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 101.62,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "amazon": {
+            "arabicName": "امازون",
+            "englishName": "Amazon",
+            "apiName": "amazon",
+            "cardTypes": {
+                "amazon_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "امازون",
+                        "english": "Amazon"
+                    },
+                    "code": "amazon_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 13000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.56,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "amazon_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "امازون",
+                        "english": "Amazon"
+                    },
+                    "code": "amazon_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 32500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 26.42,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "amazon_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "امازون",
+                        "english": "Amazon"
+                    },
+                    "code": "amazon_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 64500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 52.43,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "amazon_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "امازون",
+                        "english": "Amazon"
+                    },
+                    "code": "amazon_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 129000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 104.87,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "steam": {
+            "arabicName": "ستيم",
+            "englishName": "Steam",
+            "apiName": "steam",
+            "cardTypes": {
+                "steam_100_$": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "ستيم امريكي",
+                        "english": "Steam - US"
+                    },
+                    "code": "steam_100_$",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 128000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 97.56,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_20_riyal": {
+                    "quantityName": "20ريال",
+                    "groupInLanguage": {
+                        "arabic": "ستيم سعودي",
+                        "english": "Steam - Saudi Arabia"
+                    },
+                    "code": "steam_20_riyal",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 7000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 5.69,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_40_riyal": {
+                    "quantityName": "40ريال",
+                    "groupInLanguage": {
+                        "arabic": "ستيم سعودي",
+                        "english": "Steam - Saudi Arabia"
+                    },
+                    "code": "steam_40_riyal",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 13750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 11.17,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_100_riyal": {
+                    "quantityName": "100ريال",
+                    "groupInLanguage": {
+                        "arabic": "ستيم سعودي",
+                        "english": "Steam - Saudi Arabia"
+                    },
+                    "code": "steam_100_riyal",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 34500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 28.04,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_5_kw_dinar": {
+                    "quantityName": "5دينار",
+                    "groupInLanguage": {
+                        "arabic": "ستيم كويتي",
+                        "english": "Steam - Kuwait"
+                    },
+                    "code": "steam_5_kw_dinar",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 21000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 17.07,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_10_kw_dinar": {
+                    "quantityName": "10دينار",
+                    "groupInLanguage": {
+                        "arabic": "ستيم كويتي",
+                        "english": "Steam - Kuwait"
+                    },
+                    "code": "steam_10_kw_dinar",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 42250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 34.04,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_50_dirham": {
+                    "quantityName": "50درهم",
+                    "groupInLanguage": {
+                        "arabic": "ستيم اماراتي",
+                        "english": "Steam - UAE"
+                    },
+                    "code": "steam_50_dirham",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 17500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 14.22,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_200_dirham": {
+                    "quantityName": "200درهم",
+                    "groupInLanguage": {
+                        "arabic": "ستيم اماراتي",
+                        "english": "Steam - UAE"
+                    },
+                    "code": "steam_200_dirham",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 68500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 55.69,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "steam_400_dirham": {
+                    "quantityName": "400درهم",
+                    "groupInLanguage": {
+                        "arabic": "ستيم اماراتي",
+                        "english": "Steam - UAE"
+                    },
+                    "code": "steam_400_dirham",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 136000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 110.56,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "shahid": {
+            "arabicName": "شاهد ViP",
+            "englishName": "Shahid - VIP",
+            "apiName": "shahid",
+            "cardTypes": {
+                "shahid_3_month": {
+                    "quantityName": "3شهر",
+                    "groupInLanguage": {
+                        "arabic": "شاهد ViP",
+                        "english": "Shahid - VIP"
+                    },
+                    "code": "shahid_3_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 15000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 12.19,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "fifa": {
+            "arabicName": "فيفا",
+            "englishName": "FIFA",
+            "apiName": "fifa",
+            "cardTypes": {
+                "fifa_500_point": {
+                    "quantityName": "500نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا عماني",
+                        "english": "FIFA - Oman"
+                    },
+                    "code": "fifa_500_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6800.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 5.52,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "fifa_750_point": {
+                    "quantityName": "750نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا عماني",
+                        "english": "FIFA - Oman"
+                    },
+                    "code": "fifa_750_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 10250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 8.33,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "fifa_1050_point": {
+                    "quantityName": "1050نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا عماني",
+                        "english": "FIFA - Oman"
+                    },
+                    "code": "fifa_1050_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 13500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.97,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "fifa_1600_point": {
+                    "quantityName": "1600نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا عماني",
+                        "english": "FIFA - Oman"
+                    },
+                    "code": "fifa_1600_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 20600.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 16.66,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "fifa_2200_point": {
+                    "quantityName": "2200نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا بحريني",
+                        "english": "FIFA - Bahrain"
+                    },
+                    "code": "fifa_2200_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 27000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 21.95,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "fifa_4600_point": {
+                    "quantityName": "4600نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا كويتي",
+                        "english": "FIFA - Kuwait"
+                    },
+                    "code": "fifa_4600_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 54000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 43.9,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "fifa_12000_point": {
+                    "quantityName": "12000نقطة",
+                    "groupInLanguage": {
+                        "arabic": "فيفا اماراتي",
+                        "english": "FIFA - UAE"
+                    },
+                    "code": "fifa_12000_point",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 134500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 109.34,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "spotify": {
+            "arabicName": "سبوتيفاي",
+            "englishName": "Spotify",
+            "apiName": "spotify",
+            "cardTypes": {
+                "spotify_10_$": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "سبوتيفاي",
+                        "english": "Spotify"
+                    },
+                    "code": "spotify_10_$",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 13000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.56,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "spotify_30_$": {
+                    "quantityName": "30$",
+                    "groupInLanguage": {
+                        "arabic": "سبوتيفاي",
+                        "english": "Spotify"
+                    },
+                    "code": "spotify_30_$",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 39000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 30.89,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "spotify_60_$": {
+                    "quantityName": "60$",
+                    "groupInLanguage": {
+                        "arabic": "سبوتيفاي",
+                        "english": "Spotify"
+                    },
+                    "code": "spotify_60_$",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 77000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 62.6,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "playstation_network": {
+            "arabicName": "بلي ستيشن نتورك",
+            "englishName": "PlayStation Network",
+            "apiName": "playstation_network",
+            "cardTypes": {
+                "playstation_network_5_usd": {
+                    "quantityName": "5$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك اماراتي",
+                        "english": "PlayStation Network - UAE"
+                    },
+                    "code": "playstation_network_5_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 5.28,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك امريكي",
+                        "english": "PlayStation Network - US"
+                    },
+                    "code": "playstation_network_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.36,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_20_usd": {
+                    "quantityName": "20$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك امريكي",
+                        "english": "PlayStation Network - US"
+                    },
+                    "code": "playstation_network_20_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 25500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 20.73,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك امريكي",
+                        "english": "PlayStation Network - US"
+                    },
+                    "code": "playstation_network_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 32000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 26.01,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك امريكي",
+                        "english": "PlayStation Network - US"
+                    },
+                    "code": "playstation_network_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 63750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 51.82,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_60_usd": {
+                    "quantityName": "60$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك امريكي",
+                        "english": "PlayStation Network - US"
+                    },
+                    "code": "playstation_network_60_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 76500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 62.19,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_75_usd": {
+                    "quantityName": "75$",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك امريكي",
+                        "english": "PlayStation Network - US"
+                    },
+                    "code": "playstation_network_75_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 94500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 76.82,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_10_pound": {
+                    "quantityName": "10بريطاني",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك بريطاني",
+                        "english": "PlayStation Network - Britain"
+                    },
+                    "code": "playstation_network_10_pound",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 18500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 15.04,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_20_pound": {
+                    "quantityName": "20بريطاني",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك بريطاني",
+                        "english": "PlayStation Network - Britain"
+                    },
+                    "code": "playstation_network_20_pound",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 35200.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 28.61,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_50_pound": {
+                    "quantityName": "50بريطاني",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن نتورك بريطاني",
+                        "english": "PlayStation Network - Britain"
+                    },
+                    "code": "playstation_network_50_pound",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 84500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 68.69,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "playstation_plus": {
+            "arabicName": "بلي ستيشن بلص",
+            "englishName": "PlayStation Plus",
+            "apiName": "playstation_plus",
+            "cardTypes": {
+                "playstation_plus_1_month": {
+                    "quantityName": "1شهر",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن بلص اماراتي",
+                        "english": "PlayStation Plus - UAE"
+                    },
+                    "code": "playstation_plus_1_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 13000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.56,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_plus_3_month": {
+                    "quantityName": "3شهر",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن بلص امريكي",
+                        "english": "PlayStation Plus - US"
+                    },
+                    "code": "playstation_plus_3_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 33250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 27.03,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_plus_12_month": {
+                    "quantityName": "12شهر",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن بلص امريكي",
+                        "english": "PlayStation Plus - US"
+                    },
+                    "code": "playstation_plus_12_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 76500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 62.19,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_3_month": {
+                    "quantityName": "3شهر",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن بلص بريطاني",
+                        "english": "PlayStation Plus - Britain"
+                    },
+                    "code": "playstation_network_3_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 33500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 27.23,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "playstation_network_12_month": {
+                    "quantityName": "12شهر",
+                    "groupInLanguage": {
+                        "arabic": "بلي ستيشن بلص بريطاني",
+                        "english": "PlayStation Plus - Britain"
+                    },
+                    "code": "playstation_network_12_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 86690.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 70.47,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "careem": {
+            "arabicName": "بطاقات كريم",
+            "englishName": "Careem",
+            "apiName": "careem",
+            "cardTypes": {
+                "careem_10000_iqd": {
+                    "quantityName": "10الف دينار",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات كريم",
+                        "english": "Careem"
+                    },
+                    "code": "careem_10000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 10000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "careem_25000_iqd": {
+                    "quantityName": "25الف دينار",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات كريم",
+                        "english": "Careem"
+                    },
+                    "code": "careem_25000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 25000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "careem_50000_iqd": {
+                    "quantityName": "50الف دينار",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات كريم",
+                        "english": "Careem"
+                    },
+                    "code": "careem_50000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 50000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "careem_100000_iqd": {
+                    "quantityName": "100الف دينار",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات كريم",
+                        "english": "Careem"
+                    },
+                    "code": "careem_100000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 100000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "nintendo_eshop": {
+            "arabicName": "بطاقات نتيدو شوب",
+            "englishName": "Nintendo eShop",
+            "apiName": "nintendo_eshop",
+            "cardTypes": {
+                "nintendo_eshop_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات نتيدو شوب",
+                        "english": "Nintendo eShop"
+                    },
+                    "code": "nintendo_eshop_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12700.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "nintendo_eshop_20_usd": {
+                    "quantityName": "20$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات نتيدو شوب",
+                        "english": "Nintendo eShop"
+                    },
+                    "code": "nintendo_eshop_20_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 25250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 20.52,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "nintendo_eshop_35_usd": {
+                    "quantityName": "35$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات نتيدو شوب",
+                        "english": "Nintendo eShop"
+                    },
+                    "code": "nintendo_eshop_35_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 44250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 35.97,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "nintendo_eshop_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "بطاقات نتيدو شوب",
+                        "english": "Nintendo eShop"
+                    },
+                    "code": "nintendo_eshop_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 62500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.81,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "xbox": {
+            "arabicName": "اكس بوكس",
+            "englishName": "Xbox",
+            "apiName": "xbox",
+            "cardTypes": {
+                "xbox_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس امريكي",
+                        "english": "Xbox"
+                    },
+                    "code": "xbox_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 9.96,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "xbox_15_usd": {
+                    "quantityName": "15$",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس امريكي",
+                        "english": "Xbox"
+                    },
+                    "code": "xbox_15_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 19000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 15.44,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "xbox_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس امريكي",
+                        "english": "Xbox"
+                    },
+                    "code": "xbox_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 31500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 25.6,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "xbox_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس امريكي",
+                        "english": "Xbox"
+                    },
+                    "code": "xbox_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 62500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.81,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "xbox_live": {
+            "arabicName": "اكس بوكس اشتراك شهري",
+            "englishName": "Xbox Live",
+            "apiName": "xbox_live",
+            "cardTypes": {
+                "xbox_live_1_month": {
+                    "quantityName": "1شهر",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس اشتراك شهري",
+                        "english": "Xbox Live"
+                    },
+                    "code": "xbox_live_1_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 11700.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 9.51,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "xbox_live_3_month": {
+                    "quantityName": "3شهر",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس اشتراك شهري",
+                        "english": "Xbox Live"
+                    },
+                    "code": "xbox_live_3_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 31750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 25.81,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "xbox_live_12_month": {
+                    "quantityName": "12شهر",
+                    "groupInLanguage": {
+                        "arabic": "اكس بوكس اشتراك شهري",
+                        "english": "Xbox Live"
+                    },
+                    "code": "xbox_live_12_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 69500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 56.5,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "imvu": {
+            "arabicName": "imvu",
+            "englishName": "imvu",
+            "apiName": "imvu",
+            "cardTypes": {
+                "imvu_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "imvu",
+                        "english": "imvu"
+                    },
+                    "code": "imvu_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 32000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 26.01,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "imvu_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "imvu",
+                        "english": "imvu"
+                    },
+                    "code": "imvu_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 63000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 51.21,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "bigo_live": {
+            "arabicName": "bigo live",
+            "englishName": "bigo live",
+            "apiName": "bigo_live",
+            "cardTypes": {
+                "bigo_live_5_usd": {
+                    "quantityName": "5$",
+                    "groupInLanguage": {
+                        "arabic": "bigo live",
+                        "english": "bigo live"
+                    },
+                    "code": "bigo_live_5_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6432.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 5.28,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "bigo_live_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "bigo live",
+                        "english": "bigo live"
+                    },
+                    "code": "bigo_live_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12853.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "bigo_live_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "bigo live",
+                        "english": "bigo live"
+                    },
+                    "code": "bigo_live_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 64272.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "bigo_live_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "bigo live",
+                        "english": "bigo live"
+                    },
+                    "code": "bigo_live_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 128532.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 100.0,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "blu_tv": {
+            "arabicName": "blutv",
+            "englishName": "blutv",
+            "apiName": "blu_tv",
+            "cardTypes": {
+                "blu_tv_1_month": {
+                    "quantityName": "1شهر",
+                    "groupInLanguage": {
+                        "arabic": "blu tv اشتراك شهري",
+                        "english": "blu tv"
+                    },
+                    "code": "blu_tv_1_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 4000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 3.22,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "cashu": {
+            "arabicName": "cashu",
+            "englishName": "cashu",
+            "apiName": "cashu",
+            "cardTypes": {
+                "cashu_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "cashu",
+                        "english": "cashu"
+                    },
+                    "code": "cashu_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 15357.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 25.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "cashu_30_usd": {
+                    "quantityName": "30$",
+                    "groupInLanguage": {
+                        "arabic": "cashu",
+                        "english": "cashu"
+                    },
+                    "code": "cashu_30_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 43751.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 30.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "cashu_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "cashu",
+                        "english": "cashu"
+                    },
+                    "code": "cashu_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 68388.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.0,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "karma_koin": {
+            "arabicName": "karma koin",
+            "englishName": "karma koin",
+            "apiName": "karma_koin",
+            "cardTypes": {
+                "karma_koin_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "karma koin",
+                        "english": "karma koin"
+                    },
+                    "code": "karma_koin_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12730.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "karma_koin_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "karma koin",
+                        "english": "karma koin"
+                    },
+                    "code": "karma_koin_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 31820.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 25.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "karma_koin_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "karma koin",
+                        "english": "karma koin"
+                    },
+                    "code": "karma_koin_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 63625.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.0,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "ebay": {
+            "arabicName": "ebay",
+            "englishName": "ebay",
+            "apiName": "ebay",
+            "cardTypes": {
+                "ebay_10_usd": {
+                    "quantityName": "10$",
+                    "groupInLanguage": {
+                        "arabic": "ebay",
+                        "english": "ebay"
+                    },
+                    "code": "ebay_10_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 1300.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "ebay_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "ebay",
+                        "english": "ebay"
+                    },
+                    "code": "ebay_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 33000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 25.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "ebay_50_usd": {
+                    "quantityName": "50$",
+                    "groupInLanguage": {
+                        "arabic": "ebay",
+                        "english": "ebay"
+                    },
+                    "code": "ebay_50_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 65000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 50.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "ebay_75_usd": {
+                    "quantityName": "75$",
+                    "groupInLanguage": {
+                        "arabic": "ebay",
+                        "english": "ebay"
+                    },
+                    "code": "ebay_75_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 95000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 75.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "ebay_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "ebay",
+                        "english": "ebay"
+                    },
+                    "code": "ebay_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 129000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 100.0,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "netflix": {
+            "arabicName": "نتفلكس",
+            "englishName": "Netflix",
+            "apiName": "netflix",
+            "cardTypes": {
+                "netflix_25_usd": {
+                    "quantityName": "25$",
+                    "groupInLanguage": {
+                        "arabic": "نتفلكس",
+                        "english": "Netflix"
+                    },
+                    "code": "netflix_25_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 32000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 25.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "netflix_30_usd": {
+                    "quantityName": "30$",
+                    "groupInLanguage": {
+                        "arabic": "نتفلكس",
+                        "english": "Netflix"
+                    },
+                    "code": "netflix_30_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 37000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 30.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "netflix_60_usd": {
+                    "quantityName": "60$",
+                    "groupInLanguage": {
+                        "arabic": "نتفلكس",
+                        "english": "Netflix"
+                    },
+                    "code": "netflix_60_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 73250.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 60.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "netflix_75_usd": {
+                    "quantityName": "75$",
+                    "groupInLanguage": {
+                        "arabic": "نتفلكس",
+                        "english": "Netflix"
+                    },
+                    "code": "netflix_75_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 95000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 75.0,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "netflix_100_usd": {
+                    "quantityName": "100$",
+                    "groupInLanguage": {
+                        "arabic": "نتفلكس",
+                        "english": "Netflix"
+                    },
+                    "code": "netflix_100_usd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 127000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.0,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "apple_music": {
+            "arabicName": "ابل ميوزك",
+            "englishName": "Apple Music",
+            "apiName": "apple_music",
+            "cardTypes": {
+                "apple_music_3_month": {
+                    "quantityName": "3month",
+                    "groupInLanguage": {
+                        "arabic": "ابل ميوزك",
+                        "english": "Apple Music"
+                    },
+                    "code": "apple_music_3_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 38000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 30.89,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "apple_music_12_month": {
+                    "quantityName": "12 month",
+                    "groupInLanguage": {
+                        "arabic": "ابل ميوزك",
+                        "english": "Apple Music"
+                    },
+                    "code": "apple_music_12_month",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 125000.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 101.62,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "league_of_legends": {
+            "arabicName": "ليج اوف ليجندز(نقاط ريوت اوربي)",
+            "englishName": "League of Legends",
+            "apiName": "league_of_legends",
+            "cardTypes": {
+                "league_of_legends_10_euro": {
+                    "quantityName": "10يورو",
+                    "groupInLanguage": {
+                        "arabic": "ليج اوف ليجندز(نقاط ريوت اوربي)",
+                        "english": "League of Legends"
+                    },
+                    "code": "league_of_legends_10_euro",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 17750.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 14.43,
+                            "currency": "usd"
+                        }
+                    }
+                },
+                "league_of_legends_20_euro": {
+                    "quantityName": "20يورو",
+                    "groupInLanguage": {
+                        "arabic": "ليج اوف ليجندز(نقاط ريوت اوربي)",
+                        "english": "League of Legends"
+                    },
+                    "code": "league_of_legends_20_euro",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 35500.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 28.86,
+                            "currency": "usd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.eCard"
+        },
+        "asiacell": {
+            "arabicName": "أسيا سيل",
+            "englishName": "Asia Cell",
+            "apiName": "asiacell",
+            "cardTypes": {
+                "asiacell_1000_iqd": {
+                    "quantityName": "1000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_1000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 1400.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_2000_iqd": {
+                    "quantityName": "2000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_2000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 2900.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_3000_iqd": {
+                    "quantityName": "3000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_3000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 3900.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_5000_iqd": {
+                    "quantityName": "5000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_5000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_10000_iqd": {
+                    "quantityName": "10000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_10000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_15000_iqd": {
+                    "quantityName": "15000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_15000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 18000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_25000_iqd": {
+                    "quantityName": "25000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_25000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 30000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_30000_iqd": {
+                    "quantityName": "30000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_30000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 36000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_35000_iqd": {
+                    "quantityName": "35000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_35000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 42000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_40000_iqd": {
+                    "quantityName": "40000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_40000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 48000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_50000_iqd": {
+                    "quantityName": "50000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_50000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 60000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "asiacell_100000_iqd": {
+                    "quantityName": "100000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "أسيا سيل",
+                        "english": "Asia Cell"
+                    },
+                    "code": "asiacell_100000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 120000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.phone"
+        },
+        "zain": {
+            "arabicName": "زين",
+            "englishName": "Zain",
+            "apiName": "zain",
+            "cardTypes": {
+                "zain_2000_iqd": {
+                    "quantityName": "2000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_2000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 2900.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_5000_iqd": {
+                    "quantityName": "5000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_5000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_10000_iqd": {
+                    "quantityName": "10000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_10000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_15000_iqd": {
+                    "quantityName": "15000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_15000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 18000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_25000_iqd": {
+                    "quantityName": "25000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_25000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 30000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_35000_iqd": {
+                    "quantityName": "35000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_35000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 42000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_50000_iqd": {
+                    "quantityName": "50000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_50000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 60000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "zain_100000_iqd": {
+                    "quantityName": "100000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "زين",
+                        "english": "Zain"
+                    },
+                    "code": "zain_100000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 120000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.phone"
+        },
+        "korek": {
+            "arabicName": "كورك",
+            "englishName": "Korek",
+            "apiName": "korek",
+            "cardTypes": {
+                "korek_1000_iqd": {
+                    "quantityName": "1000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_1000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 1300.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_2000_iqd": {
+                    "quantityName": "2000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_2000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 2800.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_3000_iqd": {
+                    "quantityName": "3000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_3000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 3800.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_5000_iqd": {
+                    "quantityName": "5000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_5000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_10000_iqd": {
+                    "quantityName": "10000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_10000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_15000_iqd": {
+                    "quantityName": "15000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_15000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 18000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_30000_iqd": {
+                    "quantityName": "30000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_30000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 36000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "korek_60000_iqd": {
+                    "quantityName": "60000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "كورك",
+                        "english": "Korek"
+                    },
+                    "code": "korek_60000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 72000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.phone"
+        },
+        "iraqcell": {
+            "arabicName": "عراق سيل",
+            "englishName": "Irqacell",
+            "apiName": "iraqcell",
+            "cardTypes": {
+                "iraqcell_5000_iqd": {
+                    "quantityName": "5000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "عراق سيل",
+                        "english": "Irqacell"
+                    },
+                    "code": "iraqcell_5000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 6000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "iraqcell_10000_iqd": {
+                    "quantityName": "10000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "عراق سيل",
+                        "english": "Irqacell"
+                    },
+                    "code": "iraqcell_10000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 12000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                },
+                "iraqcell_15000_iqd": {
+                    "quantityName": "15000 IQD",
+                    "groupInLanguage": {
+                        "arabic": "عراق سيل",
+                        "english": "Irqacell"
+                    },
+                    "code": "iraqcell_15000_iqd",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 18000.0,
+                            "currency": "iqd"
+                        }
+                    }
+                }
+            },
+            "section": "Section.phone"
+        },
+
+        "likee": {
+            "arabicName": "لايكي",
+            "englishName": "likee",
+            "apiName": "likee",
+            "cardTypes": {
+                "spotify_10_$": {
+                    "quantityName": "likee_10_$",
+                    "groupInLanguage": {
+                        "arabic": "لايكي",
+                        "english": "likee"
+                    },
+                    "code": "likee_10_$",
+                    "priceInCurrency": {
+                        "iqd": {
+                            "pureAmount": 14600.0,
+                            "currency": "iqd"
+                        },
+                        "usd": {
+                            "pureAmount": 10.56,
+                            "currency": "usd"
+                        }
+                    }
+                }
+               
+            },
+            "section": "Section.eCard"
+        }
+    }
+}

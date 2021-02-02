@@ -8,7 +8,7 @@ import 'signup.dart';
 class Login extends GetWidget<AuthController> {
 //  var _auth = Get.put(AuthController());
 
-  //final AuthController _authController = Get.find();
+  final AuthController _authController = Get.find();
 
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
@@ -51,16 +51,16 @@ class Login extends GetWidget<AuthController> {
                   Get.to(SignUp());
                 },
               ),
-              FlatButton(
-                child: Text("تسجيل مندوب"),
-                onPressed: () {
-                  Get.to(DeliveryBoySignUp());
-                },
-              ),
+              // FlatButton(
+              //   child: Text("تسجيل مندوب"),
+              //   onPressed: () {
+              //     Get.to(DeliveryBoySignUp());
+              //   },
+              // ),
               IconButton(
                 icon: Icon(Icons.exit_to_app),
                 onPressed: () {
-                  //   _authController.logOut();
+                  _authController.logOut();
                 },
               ),
             ],

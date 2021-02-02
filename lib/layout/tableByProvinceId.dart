@@ -352,163 +352,304 @@ class TableByProvinceId extends StatelessWidget {
                                 Expanded(
                                     child: InkWell(
                                   onTap: () {
-                                    // print(orderController
-                                    //     .allOrdersProvince[index].orderId);
-                                    // print(orderStatusOBX);
-                                    // print(_valueOBX.value);
-                                    // print('orderTitleStatusOBX ' +
-                                    //     orderTitleStatusOBX.value);
-
                                     _valueOBX.value = 0;
                                     orderTitleStatusOBX.value = '';
                                     statusTitleController.text = '';
                                     orderStatusOBX.value = 'واصل';
 
-                                    Get.defaultDialog(
+                                    showDialog(
+                                        context: context,
+                                        builder: (_) => SingleChildScrollView(
+                                              child: Directionality(
+                                                textDirection:
+                                                    ui.TextDirection.rtl,
+                                                child: AlertDialog(
+                                                  title: Text(
+                                                    'تغير حالة الطلب ${orderController.allOrdersProvince[index].orderNumber} إلى :',
+                                                  ),
+                                                  content: Column(
+                                                    children: [
+                                                      for (int i = 0;
+                                                          i <
+                                                              _listOption
+                                                                  .length;
+                                                          i++)
+                                                        Row(
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .spaceBetween,
+                                                          children: [
+                                                            Expanded(
+                                                              child: Text(
+                                                                _listOption[i],
+                                                              ),
+                                                            ),
+                                                            Expanded(
+                                                              child:
+                                                                  Obx(
+                                                                      () =>
+                                                                          Radio(
+                                                                            value:
+                                                                                i,
+                                                                            groupValue:
+                                                                                _valueOBX.value,
+                                                                            activeColor:
+                                                                                Color(0xFF6200EE),
+                                                                            onChanged:
+                                                                                (value) {
+                                                                              _valueOBX.value = value;
+                                                                              // orderStatus.value =
+                                                                              //     _listOption[value];
+                                                                              orderTitleStatusOBX.value = _listOption[value];
+                                                                              orderStatusOBX.value = _listOption[value];
+                                                                              // statusTitleController.text= _listOption[value];
 
-                                        //confirm: Text('ok'),
-                                        textCancel: 'إلغاء',
-                                        onCancel: null,
-                                        textConfirm: 'ok',
-                                        confirmTextColor: Colors.white,
-                                        onConfirm: () {
-                                          orderModel = orderController
-                                              .allOrdersProvince[index];
-
-                                          orderModel.status =
-                                              _listOption[_valueOBX.value];
-
-                                          orderModel.statusTitle =
-                                              statusTitleController.text;
-
-                                          // statusTitleController.text
-
-                                          print('clinetid ' +
-                                              orderController.clientId.value);
-
-                                          print('client email ' +
-                                              orderController
-                                                  .allOrdersProvince[index]
-                                                  .clientEmail);
-
-                                          _onPressed(
-                                              clientEmail: orderController
-                                                  .allOrdersProvince[index]
-                                                  .clientEmail);
-
-                                          FireDb().updateOrderByUserId(
-                                              order: orderModel,
-                                              clientId: orderModel.byUserId,
-                                              uid: orderController
-                                                  .allOrdersProvince[index]
-                                                  .orderId);
-
-                                          updateLayout();
-
-                                          /* orderController.streamStatus(
-                                              status: orderController
-                                                  .orderStatus.value,
-                                              orderByName: orderController
-                                                  .orderBySortingName.value,
-                                              clientId: orderController
-                                                  .clientId.value);*/
-                                          /*  getAllAmount(
-                                              status: orderController
-                                                  .orderStatus.value,
-                                              sortingByName: orderController
-                                                  .orderBySortingName.value);*/
-
-                                          print('orderController orderStatus:' +
-                                              orderController
-                                                  .orderStatusByUser.value);
-
-                                          print(_listOption[_valueOBX.value]);
-                                          Get.back();
-                                        },
-                                        title:
-                                            'تغير حالة الطلب ${orderController.allOrdersProvince[index].orderNumber} إلى :',
-                                        content: Directionality(
-                                          textDirection: ui.TextDirection.rtl,
-                                          child: SingleChildScrollView(
-                                            reverse: true,
-                                            child: ConstrainedBox(
-                                              constraints: BoxConstraints(),
-                                              child: Column(
-                                                children: <Widget>[
-                                                  for (int i = 0;
-                                                      i < _listOption.length;
-                                                      i++)
-                                                    Row(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .spaceBetween,
-                                                      children: [
-                                                        Expanded(
-                                                          child: Text(
-                                                            _listOption[i],
+                                                                              print(_valueOBX);
+                                                                              print('orderStatusOBX.value' + orderStatusOBX.value);
+                                                                            },
+                                                                          )),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      Obx(
+                                                        () => TextField(
+                                                          controller:
+                                                              statusTitleController,
+                                                          decoration:
+                                                              InputDecoration(
+                                                            labelText:
+                                                                orderTitleStatusOBX
+                                                                    .value,
+                                                            labelStyle:
+                                                                TextStyle(
+                                                                    fontSize:
+                                                                        14),
+                                                            hintStyle: TextStyle(
+                                                                color:
+                                                                    Colors.grey,
+                                                                fontSize: 10),
                                                           ),
                                                         ),
-                                                        Expanded(
-                                                          child:
-                                                              Obx(() => Radio(
-                                                                    value: i,
-                                                                    groupValue:
-                                                                        _valueOBX
-                                                                            .value,
-                                                                    activeColor:
-                                                                        Color(
-                                                                            0xFF6200EE),
-                                                                    onChanged:
-                                                                        (value) {
-                                                                      _valueOBX
-                                                                              .value =
-                                                                          value;
-                                                                      // orderStatus.value =
-                                                                      //     _listOption[value];
-                                                                      orderTitleStatusOBX
-                                                                              .value =
-                                                                          _listOption[
-                                                                              value];
-                                                                      orderStatusOBX
-                                                                              .value =
-                                                                          _listOption[
-                                                                              value];
-                                                                      // statusTitleController.text= _listOption[value];
+                                                      )
+                                                    ],
+                                                  ),
+                                                  actions: <Widget>[
+                                                    FlatButton(
+                                                      child: Text('نعم'),
+                                                      onPressed: () {
+                                                        orderModel = orderController
+                                                                .allOrdersProvince[
+                                                            index];
 
-                                                                      print(
-                                                                          _valueOBX);
-                                                                      print('orderStatusOBX.value' +
-                                                                          orderStatusOBX
-                                                                              .value);
-                                                                    },
-                                                                  )),
-                                                        ),
-                                                      ],
+                                                        orderModel.status =
+                                                            _listOption[
+                                                                _valueOBX
+                                                                    .value];
+
+                                                        orderModel.statusTitle =
+                                                            statusTitleController
+                                                                .text;
+
+                                                        // statusTitleController.text
+
+                                                        print('clinetid ' +
+                                                            orderController
+                                                                .clientId
+                                                                .value);
+
+                                                        print('client email ' +
+                                                            orderController
+                                                                .allOrdersProvince[
+                                                                    index]
+                                                                .clientEmail);
+
+                                                        _onPressed(
+                                                            clientEmail:
+                                                                orderController
+                                                                    .allOrdersProvince[
+                                                                        index]
+                                                                    .clientEmail);
+
+                                                        FireDb().updateOrderByUserId(
+                                                            order: orderModel,
+                                                            clientId: orderModel
+                                                                .byUserId,
+                                                            uid: orderController
+                                                                .allOrdersProvince[
+                                                                    index]
+                                                                .orderId);
+
+                                                        updateLayout();
+
+                                                        print('orderController orderStatus:' +
+                                                            orderController
+                                                                .orderStatusByUser
+                                                                .value);
+
+                                                        print(_listOption[
+                                                            _valueOBX.value]);
+
+                                                        Navigator.of(context)
+                                                            .pop();
+                                                      },
                                                     ),
-                                                  Obx(
-                                                    () => TextField(
-                                                      controller:
-                                                          statusTitleController,
-                                                      decoration:
-                                                          InputDecoration(
-                                                        labelText:
-                                                            orderTitleStatusOBX
-                                                                .value,
-                                                        labelStyle: TextStyle(
-                                                            fontSize: 14),
-                                                        hintStyle: TextStyle(
-                                                            color: Colors.grey,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  )
-                                                ],
+                                                    FlatButton(
+                                                      child: Text('لا'),
+                                                      onPressed: () {
+                                                        Navigator.of(context)
+                                                            .pop();
+                                                      },
+                                                    )
+                                                  ],
+                                                ),
                                               ),
-                                            ),
-                                          ),
-                                        ),
-                                        middleText: orderController
-                                            .allOrdersProvince[index].orderId);
+                                            ));
+
+                                    // Get.defaultDialog(
+                                    //
+                                    //     //confirm: Text('ok'),
+                                    //     textCancel: 'إلغاء',
+                                    //     onCancel: null,
+                                    //     textConfirm: 'ok',
+                                    //     confirmTextColor: Colors.white,
+                                    //     onConfirm: () {
+                                    //       orderModel = orderController
+                                    //           .allOrdersProvince[index];
+                                    //
+                                    //       orderModel.status =
+                                    //           _listOption[_valueOBX.value];
+                                    //
+                                    //       orderModel.statusTitle =
+                                    //           statusTitleController.text;
+                                    //
+                                    //       // statusTitleController.text
+                                    //
+                                    //       print('clinetid ' +
+                                    //           orderController.clientId.value);
+                                    //
+                                    //       print('client email ' +
+                                    //           orderController
+                                    //               .allOrdersProvince[index]
+                                    //               .clientEmail);
+                                    //
+                                    //       _onPressed(
+                                    //           clientEmail: orderController
+                                    //               .allOrdersProvince[index]
+                                    //               .clientEmail);
+                                    //
+                                    //       FireDb().updateOrderByUserId(
+                                    //           order: orderModel,
+                                    //           clientId: orderModel.byUserId,
+                                    //           uid: orderController
+                                    //               .allOrdersProvince[index]
+                                    //               .orderId);
+                                    //
+                                    //       updateLayout();
+                                    //
+                                    //       /* orderController.streamStatus(
+                                    //           status: orderController
+                                    //               .orderStatus.value,
+                                    //           orderByName: orderController
+                                    //               .orderBySortingName.value,
+                                    //           clientId: orderController
+                                    //               .clientId.value);*/
+                                    //       /*  getAllAmount(
+                                    //           status: orderController
+                                    //               .orderStatus.value,
+                                    //           sortingByName: orderController
+                                    //               .orderBySortingName.value);*/
+                                    //
+                                    //       print('orderController orderStatus:' +
+                                    //           orderController
+                                    //               .orderStatusByUser.value);
+                                    //
+                                    //       print(_listOption[_valueOBX.value]);
+                                    //       Get.back();
+                                    //     },
+                                    //     title:
+                                    //         'تغير حالة الطلب ${orderController.allOrdersProvince[index].orderNumber} إلى :',
+                                    //     content: Container(
+                                    //       child: Directionality(
+                                    //         textDirection: ui.TextDirection.rtl,
+                                    //         child: Expanded(
+                                    //           child: Column(
+                                    //             children: <Widget>[
+                                    //               for (int i = 0;
+                                    //                   i < _listOption.length;
+                                    //                   i++)
+                                    //                 Row(
+                                    //                   mainAxisAlignment:
+                                    //                       MainAxisAlignment
+                                    //                           .spaceBetween,
+                                    //                   children: [
+                                    //                     Expanded(
+                                    //                       child: Text(
+                                    //                         _listOption[i],
+                                    //                         style: TextStyle(
+                                    //                             fontSize: 10),
+                                    //                       ),
+                                    //                     ),
+                                    //                     Expanded(
+                                    //                       child:
+                                    //                           Obx(() => Radio(
+                                    //                                 value: i,
+                                    //                                 groupValue:
+                                    //                                     _valueOBX
+                                    //                                         .value,
+                                    //                                 activeColor:
+                                    //                                     Color(
+                                    //                                         0xFF6200EE),
+                                    //                                 onChanged:
+                                    //                                     (value) {
+                                    //                                   _valueOBX
+                                    //                                           .value =
+                                    //                                       value;
+                                    //                                   // orderStatus.value =
+                                    //                                   //     _listOption[value];
+                                    //                                   orderTitleStatusOBX
+                                    //                                           .value =
+                                    //                                       _listOption[
+                                    //                                           value];
+                                    //                                   orderStatusOBX
+                                    //                                           .value =
+                                    //                                       _listOption[
+                                    //                                           value];
+                                    //                                   // statusTitleController.text= _listOption[value];
+                                    //
+                                    //                                   print(
+                                    //                                       _valueOBX);
+                                    //                                   print('orderStatusOBX.value' +
+                                    //                                       orderStatusOBX
+                                    //                                           .value);
+                                    //                                 },
+                                    //                               )),
+                                    //                     ),
+                                    //                   ],
+                                    //                 ),
+                                    //               Obx(
+                                    //                 () => TextField(
+                                    //                   controller:
+                                    //                       statusTitleController,
+                                    //                   decoration:
+                                    //                       InputDecoration(
+                                    //                     labelText:
+                                    //                         orderTitleStatusOBX
+                                    //                             .value,
+                                    //                     labelStyle: TextStyle(
+                                    //                         fontSize: 14),
+                                    //                     hintStyle: TextStyle(
+                                    //                         color: Colors.grey,
+                                    //                         fontSize: 10),
+                                    //                   ),
+                                    //                 ),
+                                    //               )
+                                    //             ],
+                                    //           ),
+                                    //         ),
+                                    //       ),
+                                    //     ),
+                                    //     middleText: orderController
+                                    //         .allOrdersProvince[index].orderId);
                                   },
                                   child: Container(
                                     child: Text(orderController

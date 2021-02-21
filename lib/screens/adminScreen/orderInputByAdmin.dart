@@ -103,7 +103,7 @@ class OrderInputByAdmin extends StatelessWidget {
     });
   }*/
 
-  List<String> country = [
+  List<String> iraqProvinces = [
     'الرمادي',
     'الحلة‎',
     'بغداد',
@@ -173,7 +173,7 @@ class OrderInputByAdmin extends StatelessWidget {
                   required: true,
                   hintText: 'أختر مدينة',
                   labelText: 'المدن',
-                  items: country,
+                  items: iraqProvinces,
                 ),
 
                 SizedBox(

@@ -12,9 +12,7 @@ import 'package:taswel/controllers/themeController.dart';
 import 'package:taswel/controllers/userController.dart';
 import 'package:taswel/models/order.dart';
 import 'package:taswel/models/user.dart';
-import 'package:taswel/screens/adminScreen/adminHome.dart';
 import 'package:taswel/screens/adminScreen/orderInputByAdmin.dart';
-import 'package:taswel/screens/appByUser/home.dart';
 import 'package:taswel/screens/homeAdmin.dart';
 import 'package:taswel/services/fireDb.dart';
 // import 'flutter_web2/tutorial/getOrderList.dart';
@@ -78,7 +76,7 @@ class UsersLayout extends StatelessWidget {
         ),
         body: Center(
           child: StreamBuilder(
-              stream: FireDb().getUserList(),
+              stream: FireDb().getUserList(role: 'shopOwner'),
               builder: (BuildContext context,
                   AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (!snapshot.hasData) {
@@ -105,23 +103,23 @@ class UsersLayout extends StatelessWidget {
                         child: Container(
                           // alignment: Alignment.center,
                           width: MediaQuery.of(context).size.width * 0.29,
-                          height: MediaQuery.of(context).size.height * 0.25,
+                          height: MediaQuery.of(context).size.height * 0.15,
                           color: Colors.amberAccent,
                           child: Padding(
                             padding: EdgeInsets.all(5),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Container(
-                                  alignment: Alignment.centerRight,
-                                  child: Text(
-                                    '${e['name']}',
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                                Divider(
-                                  color: Colors.black,
-                                ),
+                                // Container(
+                                //   alignment: Alignment.centerRight,
+                                //   child: Text(
+                                //     '${e['name']}',
+                                //     style: TextStyle(fontSize: 20),
+                                //   ),
+                                // ),
+                                // Divider(
+                                //   color: Colors.black,
+                                // ),
                                 Container(
                                   alignment: Alignment.centerRight,
                                   child: Text(

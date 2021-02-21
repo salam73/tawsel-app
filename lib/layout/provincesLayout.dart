@@ -13,9 +13,7 @@ import 'package:taswel/controllers/themeController.dart';
 import 'package:taswel/controllers/userController.dart';
 import 'package:taswel/models/order.dart';
 import 'package:taswel/models/user.dart';
-import 'package:taswel/screens/adminScreen/adminHome.dart';
 import 'package:taswel/screens/adminScreen/orderInputByAdmin.dart';
-import 'package:taswel/screens/appByUser/home.dart';
 import 'package:taswel/screens/homeAdmin.dart';
 import 'package:taswel/services/fireDb.dart';
 // import 'flutter_web2/tutorial/getOrderList.dart';
@@ -83,7 +81,7 @@ class ProvincesLayout extends StatelessWidget {
           body: Center(
             child: Wrap(
               children: OrderInputByAdmin()
-                  .country
+                  .iraqProvinces
                   .map(
                     (item) => StreamBuilder(
                         stream: _firestore

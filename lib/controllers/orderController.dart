@@ -10,12 +10,14 @@ class OrderController extends GetxController {
   Rx<List<OrderModel>> orderList = Rx<List<OrderModel>>();
   Rx<List<OrderModel>> allOrderListByUser = Rx<List<OrderModel>>();
   Rx<List<OrderModel>> allOrderListByProvince = Rx<List<OrderModel>>();
+  Rx<List<OrderModel>> allOrderListByMandobId = Rx<List<OrderModel>>();
   Rx<List<OrderModel>> allOrderListByProvinceFilterByProvince =
       Rx<List<OrderModel>>();
 
   var orderStatusByUser = ''.obs;
   var orderStatusByProvince = ''.obs;
   var deliveryToCity = ''.obs;
+  var deliveryBoyId = ''.obs;
   var orderBySortingName = 'dateCreated'.obs;
   var sumAmount = 0.obs;
   var sumDelivery = 0.obs;
@@ -27,6 +29,7 @@ class OrderController extends GetxController {
   List<OrderModel> get orders => orderList.value;
   List<OrderModel> get allOrdersUser => allOrderListByUser.value;
   List<OrderModel> get allOrdersProvince => allOrderListByProvince.value;
+  List<OrderModel> get allOrdersMandobId => allOrderListByMandobId.value;
   List<OrderModel> get allOrdersProvinceFilterByProvince =>
       allOrderListByProvinceFilterByProvince.value;
 
@@ -45,9 +48,12 @@ class OrderController extends GetxController {
         status: orderStatusByUser.value, sortBy: orderBySortingName.value));
     //stream coming from firebase For todo List
     allOrderListByProvince.bindStream(FireDb().allOrderStreamByUserAndStatus(
+        status: orderStatusByProvince.value, sortBy: orderBySortingName.value));
+
+    allOrderListByMandobId.bindStream(FireDb().orderStreamByMandobId(
         status: orderStatusByProvince.value,
-        sortBy: orderBySortingName
-            .value)); //stream coming from firebase For todo List
+        deliveryBoyId:
+            deliveryBoyId.value)); //stream coming from firebase For todo List
 
     super.onInit();
   }
@@ -106,6 +112,11 @@ class OrderController extends GetxController {
   void streamOrdersByProvince({String deliveryToCity}) {
     allOrderListByProvinceFilterByProvince.bindStream(
         FireDb().orderStreamByProvince(deliveryToCity: deliveryToCity));
+  }
+
+  void streamOrdersByMandobId({String deliveryBoyId, String status}) {
+    allOrderListByMandobId.bindStream(FireDb()
+        .orderStreamByMandobId(deliveryBoyId: deliveryBoyId, status: status));
   }
 
   void clear() {

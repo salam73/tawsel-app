@@ -160,11 +160,23 @@ class FireDb {
     }
   }
 
-  Stream<QuerySnapshot> getUserList() {
+  Stream<QuerySnapshot> getUserList({String role = 'shopOwner'}) {
     try {
       return FirebaseFirestore.instance
           .collection('users')
-          .where('role', isEqualTo: 'shopOwner')
+          .where('role', isEqualTo: role)
+          .snapshots();
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Stream<QuerySnapshot> getMandobs({String provinceName = ''}) {
+    try {
+      return FirebaseFirestore.instance
+          .collection('users')
+          .where('role', isEqualTo: 'mandob')
+          .where('province', isEqualTo: provinceName)
           .snapshots();
     } catch (e) {
       rethrow;
@@ -185,10 +197,10 @@ class FireDb {
   Stream<List<OrderModel>> orderStream(String uid) {
     // print('user id' + uid);
     return _firestore
-        .collection("users")
-        .doc(uid)
+        // .collection("users")
+        // .doc(uid)
         .collection("orders")
-        // .where('byUserId', isEqualTo: uid ?? '')
+        .where('byUserId', isEqualTo: uid ?? '')
         // .orderBy("dateCreated", descending: true)
         .snapshots()
         .map((QuerySnapshot query) {
@@ -203,9 +215,10 @@ class FireDb {
   Stream<List<OrderModel>> allOrderStreamByUserAndStatus(
       {String status, String sortBy, String clientId}) {
     return _firestore
-        .collection("users")
-        .doc(clientId)
+        // .collection("users")
+        // .doc(clientId)
         .collection("orders")
+        .where('byUserId', isEqualTo: clientId ?? '')
         .where('status', isEqualTo: status ?? '')
         // .where('byUserId', isEqualTo: clientId ?? '')
         .orderBy(sortBy ?? 'dateCreated', descending: true)
@@ -261,6 +274,45 @@ class FireDb {
       });
       return retVal;
     });
+  }
+
+  Stream<List<OrderModel>> orderStreamByMandobId({
+    String deliveryBoyId,
+    String status,
+  }) {
+    return _firestore
+        // .collection("users")
+        // .doc(uid)
+        .collection("orders")
+        .where('deliveryBoyId', isEqualTo: deliveryBoyId)
+        .where('status', isEqualTo: status)
+        // .orderBy('deliveryToCity')
+        // .orderBy("dateCreated", descending: true)
+
+        //
+        .snapshots()
+        .map((QuerySnapshot query) {
+      List<OrderModel> retVal = List();
+      query.docs.forEach((element) {
+        retVal.add(OrderModel.fromDocumentSnapshot(element));
+      });
+      return retVal;
+    });
+  }
+
+  Stream<QuerySnapshot> orderStreamByMandobIdAndStatus({
+    String deliveryBoyId,
+    String status,
+  }) {
+    try {
+      return FirebaseFirestore.instance
+          .collection('orders')
+          .where('deliveryBoyId', isEqualTo: deliveryBoyId)
+          .where('status', isEqualTo: status)
+          .snapshots();
+    } catch (e) {
+      rethrow;
+    }
   }
 
   Stream<List<OrderModel>> orderStreamByProvince({
@@ -331,7 +383,19 @@ class FireDb {
     }
   }
 
-  Future<void> updateOrderBy(
+  Future<void> updateOrderByMandob({String orderId, String MandobId}) async {
+    try {
+      _firestore.collection("orders").doc(orderId).update({
+        'deliveryBoyId': MandobId,
+      });
+      // .update(order.toJson());
+    } catch (e) {
+      print(e);
+      rethrow;
+    }
+  }
+
+  /*Future<void> updateOrderBy(
       {OrderModel order, String clientId, String uid}) async {
     try {
       _firestore
@@ -360,7 +424,7 @@ class FireDb {
       print(e);
       rethrow;
     }
-  }
+  }*/
 
   Future<void> deleteOrder(OrderModel order, String uid) async {
     try {

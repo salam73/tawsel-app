@@ -1,12 +1,7 @@
 import 'package:taswel/controllers/authController.dart';
 import 'package:taswel/controllers/userController.dart';
 import 'package:taswel/layout/mainLayout.dart';
-import 'package:taswel/layout/provincesLayout.dart';
-import 'package:taswel/models/user.dart';
-import 'package:taswel/receivingBoy/receiveHome.dart';
-import 'package:taswel/screens/OrdersListByUser.dart';
-import 'package:taswel/screens/adminScreen/adminHome.dart';
-import 'package:taswel/screens/appByUser/home.dart';
+
 import 'package:taswel/screens/auth/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -39,8 +34,6 @@ class Root extends GetWidget<AuthController> {
       builder: (_) {
         if (Get.find<AuthController>().user != null &&
             userModel.user.name != null) {
-          CloudMessageProvider(context: context, user: userModel.user)
-              .setupNotification();
           print('role' + userModel.user.role);
           // print('shopAddress ' + userModel.user.shopAddress);
 

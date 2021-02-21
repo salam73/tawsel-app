@@ -9,8 +9,8 @@ import 'package:taswel/controllers/userController.dart';
 import 'package:get/get.dart';
 import 'package:taswel/controllers/orderController.dart';
 import 'package:taswel/models/order.dart';
+import 'package:taswel/models/user.dart';
 import 'package:taswel/screens/adminScreen/orderDetailByAdmin.dart';
-import 'package:taswel/screens/appByUser/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'dart:ui' as ui;
@@ -39,10 +39,11 @@ class DeliveryHome extends StatelessWidget {
   ];
 
   OrderModel orderModel = OrderModel();
+  UserModel userModel = UserModel();
   OrderController orderController = Get.put(OrderController());
   var statusTitleController = TextEditingController();
   var deliveryCostController = TextEditingController();
-
+  final AuthController _authController = Get.find();
   FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
 
   UserController _userController = Get.find();
@@ -50,11 +51,11 @@ class DeliveryHome extends StatelessWidget {
   DeliveryHome({Key key, this.province}) : super(key: key);
 
   void updateLayout({String status}) {
-    orderController.streamOrdersByProvinceAndStatus(
+    orderController.streamOrdersByMandobId(
         status: status ?? orderController.orderStatusByProvince.value,
-        deliveryToCity: orderController.deliveryToCity.value);
+        deliveryBoyId: orderController.deliveryBoyId.value);
 
-    print('provinceName: ${orderController.deliveryToCity.value}');
+    print('deliveryBoyId: ${orderController.deliveryBoyId.value}');
   }
 
   List<String> tokenList;
@@ -82,6 +83,11 @@ class DeliveryHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     orderController.deliveryToCity.value = this.province;
+    orderController.deliveryBoyId.value = _authController.user.uid;
+
+    print(orderController.allOrdersMandobId);
+
+    print('deliveryBoyId:' + orderController.deliveryBoyId.value);
 
     updateLayout(status: 'جاهز');
     //_onPressed();
@@ -91,8 +97,7 @@ class DeliveryHome extends StatelessWidget {
       textDirection: ui.TextDirection.rtl,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(orderController.deliveryToCity.value,
-              style: GoogleFonts.cairo()),
+          title: Text(_authController.user.uid, style: GoogleFonts.cairo()),
         ),
         body: Center(
             /**/
@@ -112,7 +117,7 @@ class DeliveryHome extends StatelessWidget {
                     width: 10,
                   ),
                   Text(
-                    orderController.allOrdersProvince.length.toString(),
+                    orderController.allOrdersMandobId.length.toString(),
                     style: TextStyle(fontSize: 25),
                   ),
                 ],
@@ -206,15 +211,16 @@ class DeliveryHome extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
+            //---------------
             GetX<OrderController>(
               init: Get.put(OrderController()),
               builder: (OrderController orderController) {
                 // orderController.sumAmount.value = 0;
                 if (orderController != null &&
-                    orderController.allOrdersProvince != null) {
+                    orderController.allOrdersMandobId != null) {
                   return Expanded(
                     child: ListView.builder(
-                      itemCount: orderController.allOrdersProvince.length,
+                      itemCount: orderController.allOrdersMandobId.length,
                       itemBuilder: (_, index) {
                         // orderController.sumAmount.value =
                         //     orderController.sumAmount.value +
@@ -239,17 +245,17 @@ class DeliveryHome extends StatelessWidget {
                                   onTap: () {
                                     Get.to(OrderDetailByAdmin(
                                       orderId: orderController
-                                          .allOrdersProvince[index].orderId,
+                                          .allOrdersMandobId[index].orderId,
                                       userId: orderController
-                                          .allOrdersProvince[index].byUserId,
+                                          .allOrdersMandobId[index].byUserId,
                                     ));
                                   },
                                   child: Text(orderController
-                                      .allOrdersProvince[index].orderNumber),
+                                      .allOrdersMandobId[index].orderNumber),
                                 )),
                                 Expanded(
                                     child: Text(orderController
-                                        .allOrdersProvince[index]
+                                        .allOrdersMandobId[index]
                                         .customerName)),
                                 // Expanded(
                                 //     child: Text(orderController
@@ -257,7 +263,7 @@ class DeliveryHome extends StatelessWidget {
                                 //         .deliveryToCity)),
                                 Expanded(
                                     child: Text(orderController
-                                        .allOrdersProvince[index]
+                                        .allOrdersMandobId[index]
                                         .amountAfterDelivery
                                         .toString())),
                                 // Expanded(
@@ -274,7 +280,7 @@ class DeliveryHome extends StatelessWidget {
                                 // ),
                                 Expanded(
                                     child: Text(orderController
-                                        .allOrdersProvince[index].status)),
+                                        .allOrdersMandobId[index].status)),
 
                                 // هنا قسم الحالة وعن طريقة يمكن تغير الحاله
                                 Expanded(
@@ -298,7 +304,7 @@ class DeliveryHome extends StatelessWidget {
                                         textDirection: ui.TextDirection.rtl,
                                         child: AlertDialog(
                                           title: Text(
-                                              'تغير حالة الطلب ${orderController.allOrdersProvince[index].orderNumber} إلى :'),
+                                              'تغير حالة الطلب ${orderController.allOrdersMandobId[index].orderNumber} إلى :'),
                                           content: SingleChildScrollView(
                                             child: Column(
                                               children: <Widget>[
@@ -361,7 +367,7 @@ class DeliveryHome extends StatelessWidget {
                                                 Navigator.of(ctx).pop();
 
                                                 orderModel = orderController
-                                                    .allOrdersProvince[index];
+                                                    .allOrdersMandobId[index];
 
                                                 orderModel.status = _listOption[
                                                     _valueOBX.value];
@@ -373,7 +379,7 @@ class DeliveryHome extends StatelessWidget {
 
                                                 _onPressed(
                                                     clientEmail: orderController
-                                                        .allOrdersProvince[
+                                                        .allOrdersMandobId[
                                                             index]
                                                         .clientEmail);
 
@@ -382,7 +388,7 @@ class DeliveryHome extends StatelessWidget {
                                                     clientId:
                                                         orderModel.byUserId,
                                                     uid: orderController
-                                                        .allOrdersProvince[
+                                                        .allOrdersMandobId[
                                                             index]
                                                         .orderId);
 
@@ -395,7 +401,7 @@ class DeliveryHome extends StatelessWidget {
                                       ),
                                     );
 
-                                    /* Get.defaultDialog(
+                                    Get.defaultDialog(
 
                                         //confirm: Text('ok'),
                                         // textCancel: 'إلغاء',
@@ -435,22 +441,6 @@ class DeliveryHome extends StatelessWidget {
                                                   .orderId);
 
                                           updateLayout();
-
-                                          */
-                                    /* orderController.streamStatus(
-                                              status: orderController
-                                                  .orderStatus.value,
-                                              orderByName: orderController
-                                                  .orderBySortingName.value,
-                                              clientId: orderController
-                                                  .clientId.value);*/ /*
-                                          */
-                                    /*  getAllAmount(
-                                              status: orderController
-                                                  .orderStatus.value,
-                                              sortingByName: orderController
-                                                  .orderBySortingName.value);*/
-                                    /*
 
                                           print('orderController orderStatus:' +
                                               orderController
@@ -522,11 +512,11 @@ class DeliveryHome extends StatelessWidget {
                                           ),
                                         ),
                                         middleText: orderController
-                                            .allOrdersProvince[index].orderId);*/
+                                            .allOrdersProvince[index].orderId);
                                   },
                                   child: Container(
                                     child: Text(orderController
-                                        .allOrdersProvince[index].statusTitle),
+                                        .allOrdersMandobId[index].statusTitle),
                                     color: Colors.lightBlueAccent,
                                   ),
                                 ))
@@ -551,6 +541,8 @@ class DeliveryHome extends StatelessWidget {
                 }
               },
             ),
+//-------
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -565,14 +557,14 @@ class DeliveryHome extends StatelessWidget {
                 // ),
                 // Text('كلفة النقل: '),
                 // Obx(() => Text(orderController.getDeliveryCost().toString())),
-                Text('صافي المبلغ: '),
+                /*  Text('صافي المبلغ: '),
                 Obx(
                   () => Text(
                     (orderController.getAllAmountProvince() -
                             orderController.getDeliveryCostProvince())
                         .toString(),
                   ),
-                ),
+                ),*/
               ],
             ),
             SizedBox(
@@ -598,9 +590,8 @@ class DeliveryHome extends StatelessWidget {
         controller.orderStatusByProvince.value = status;
         // orderStatus.value = status;
 
-        controller.streamOrdersByProvinceAndStatus(
-            status: status,
-            deliveryToCity: orderController.deliveryToCity.value);
+        controller.streamOrdersByMandobId(
+            status: status, deliveryBoyId: orderController.deliveryBoyId.value);
 
         print('orderController orderStatus:' +
             controller.orderStatusByProvince.value);

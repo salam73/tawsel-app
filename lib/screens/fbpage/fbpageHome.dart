@@ -1,9 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:taswel/controllers/authController.dart';
+import 'package:taswel/controllers/userController.dart';
 
 import 'package:taswel/screens/adminScreen/orderDetailByAdmin.dart';
 import 'package:taswel/screens/appByUser/orderInput.dart';
+import 'package:taswel/services/cloudMessageProvider.dart';
 
 import 'package:taswel/services/fireDb.dart';
 
@@ -17,7 +19,7 @@ import 'dart:ui' as ui;
 class FbPageHome extends StatelessWidget {
   FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final AuthController _authController = Get.find();
-
+  UserController userModel = Get.find();
   final FirebaseMessaging firebaseMessaging = FirebaseMessaging();
 
   var myStatus = 'تم الإستلام'.obs;
@@ -39,6 +41,8 @@ class FbPageHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    CloudMessageProvider(context: context, user: userModel.user)
+        .setupNotification();
     return Directionality(
       textDirection: ui.TextDirection.rtl,
       child: Scaffold(

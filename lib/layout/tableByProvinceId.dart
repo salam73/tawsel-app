@@ -23,10 +23,12 @@ class TableByProvinceId extends StatelessWidget {
   var headerStatusOBX = ''.obs;
   var orderTitleStatusOBX = ''.obs;
   var _valueOBX = 0.obs;
+  var currentStatus = 0.obs;
 
   var fireDb = FireDb();
 
   var _listOption = [
+    'جاهز',
     'تم الإستلام',
     'واصل',
     'راجع',
@@ -46,9 +48,10 @@ class TableByProvinceId extends StatelessWidget {
 
   void updateLayout({String status}) {
     orderController.streamOrdersByProvinceAndStatus(
-        status: status ?? orderController.orderStatusByProvince.value,
+        status: status ?? _listOption[currentStatus.value],
         deliveryToCity: orderController.deliveryToCity.value);
-    orderController.orderStatusByProvince.value = 'جاهز';
+    orderController.orderStatusByProvince.value =
+        _listOption[currentStatus.value];
     print('provinceName: ${orderController.deliveryToCity.value}');
   }
 
@@ -132,46 +135,55 @@ class TableByProvinceId extends StatelessWidget {
             ),
 
             //Obx(() => Text(orderController.allOrdersProvince.length.toString())),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  statusButton(
-                    title: 'جاهز',
-                    controller: orderController,
-                    status: 'جاهز',
-                  ),
-                  statusButton(
-                    title: 'تم الإستلام',
-                    controller: orderController,
-                    status: 'تم الإستلام',
-                  ),
-                  statusButton(
-                      title: 'واصل',
-                      controller: orderController,
-                      status: 'واصل'),
-                  statusButton(
-                      title: 'راجع',
-                      controller: orderController,
-                      status: 'راجع'),
-                  statusButton(
-                      title: 'مؤجل',
-                      controller: orderController,
-                      status: 'مؤجل'),
-                  statusButton(
-                      title: 'قيد التوصيل',
-                      controller: orderController,
-                      status: 'قيد التوصيل'),
-                  statusButton(
-                      title: 'تم الدفع',
-                      controller: orderController,
-                      status: 'تم الدفع'),
-                  SizedBox(
-                    height: 20,
-                  )
-                ],
-              ),
+            Wrap(
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                statusButton(
+                  title: 'جاهز',
+                  controller: orderController,
+                  status: 'جاهز',
+                  currentIndex: 0,
+                ),
+                statusButton(
+                  title: 'تم الإستلام',
+                  controller: orderController,
+                  status: 'تم الإستلام',
+                  currentIndex: 1,
+                ),
+                statusButton(
+                  title: 'واصل',
+                  controller: orderController,
+                  status: 'واصل',
+                  currentIndex: 2,
+                ),
+                statusButton(
+                  title: 'راجع',
+                  controller: orderController,
+                  status: 'راجع',
+                  currentIndex: 3,
+                ),
+                statusButton(
+                  title: 'مؤجل',
+                  controller: orderController,
+                  status: 'مؤجل',
+                  currentIndex: 4,
+                ),
+                statusButton(
+                  title: 'قيد التوصيل',
+                  controller: orderController,
+                  status: 'قيد التوصيل',
+                  currentIndex: 5,
+                ),
+                statusButton(
+                  title: 'تم الدفع',
+                  controller: orderController,
+                  status: 'تم الدفع',
+                  currentIndex: 6,
+                ),
+                SizedBox(
+                  height: 20,
+                )
+              ],
             ),
             SizedBox(
               height: 20,
@@ -433,11 +445,11 @@ class TableByProvinceId extends StatelessWidget {
     );
   }
 
-  Widget statusButton({
-    String title,
-    OrderController controller,
-    String status,
-  }) {
+  Widget statusButton(
+      {String title,
+      OrderController controller,
+      String status,
+      int currentIndex}) {
     return RaisedButton(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -445,7 +457,7 @@ class TableByProvinceId extends StatelessWidget {
       ),
       onPressed: () {
         controller.orderStatusByProvince.value = status;
-        // orderStatus.value = status;
+        this.currentStatus.value = currentIndex;
 
         controller.streamOrdersByProvinceAndStatus(
             status: status,
@@ -549,28 +561,29 @@ class TableByProvinceId extends StatelessWidget {
 
                         // statusTitleController.text
 
-                        print('clinetid ' + orderController.clientId.value);
+                        // print('clinetid ' + orderController.clientId.value);
+                        //
+                        // print('client email ' +
+                        //     orderController
+                        //         .allOrdersProvince[index].clientEmail);
 
-                        print('client email ' +
-                            orderController
-                                .allOrdersProvince[index].clientEmail);
-
-                        _onPressed(
-                            clientEmail: orderController
-                                .allOrdersProvince[index].clientEmail);
+                        // _onPressed(
+                        //     clientEmail: orderController
+                        //         .allOrdersProvince[index].clientEmail);
 
                         FireDb().updateOrderByUserId(
                             order: orderModel,
+                            //status: _listOption[_valueOBX.value],
                             clientId: orderModel.byUserId,
                             uid: orderController
                                 .allOrdersProvince[index].orderId);
 
                         updateLayout();
 
-                        print('orderController orderStatus:' +
-                            orderController.orderStatusByUser.value);
-
-                        print(_listOption[_valueOBX.value]);
+                        // print('orderController orderStatus:' +
+                        //     orderController.orderStatusByUser.value);
+                        //
+                        // print(_listOption[_valueOBX.value]);
 
                         Navigator.of(context).pop();
                       },

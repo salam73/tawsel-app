@@ -352,15 +352,18 @@ class FireDb {
     }
   }
 
-  Future<void> updateOrderByUserId(
-      {OrderModel order, String clientId, String uid}) async {
+  Future<void> updateOrderByUserId({
+    OrderModel order,
+    String clientId,
+    String uid,
+  }) async {
     try {
       _firestore
           .collection("users")
           .doc(clientId)
           .collection("orders")
           .doc(uid)
-          // .update({'status': 'راجع'});
+          //   .update({'status': status});
           //
           // .update({'status': order.status, 'statusTitle': order.statusTitle});
 
@@ -375,7 +378,7 @@ class FireDb {
       _firestore
           .collection("orders")
           .doc(uid)
-          // .update({'status': order.status, 'statusTitle': order.statusTitle});
+          //.update({'status': status});
           .update(order.toJson());
     } catch (e) {
       print(e);
